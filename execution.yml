@@ -1,0 +1,15 @@
+execution : 
+- concurttency:50
+  hold-for: 3m
+  ramp-up : 2m 
+  
+  scenario: choose flight
+  scenarios: 
+    Choose Flight : 
+      requests: 
+      -label:blazedemo
+       method :GET
+       url: http ://blazedemo.com/
+       -label : reserve 
+       mehtod :POST
+       url : htt//blazedemo.com/ 
